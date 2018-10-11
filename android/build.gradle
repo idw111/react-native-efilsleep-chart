@@ -27,10 +27,17 @@ android {
 }
 
 repositories {
+    flatDir {
+        dirs 'libs'
+    }
     mavenCentral()
 }
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
+    compile files('libs/heartbreathdevicecore_3.0.0.jar')
+    compile files('libs/pillowsdk_3.0.0.jar')
+    compile files('libs/sdkalgorithm.jar')
+    compile files('libs/sdkcore_3.0.0.jar')
 }
   
